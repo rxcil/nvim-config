@@ -42,5 +42,5 @@ vim.api.nvim_set_hl(
   0,
   "TabLine",
   -- { fg = "#ffffff", bg = "#14161b", bold = false }
-  { fg = "#ffffff", bg = "NONE", bold = false }
+  { fg = "#000000", bg = "NONE", bold = false }
 ) -- Non-selected tabs
