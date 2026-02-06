@@ -8,6 +8,14 @@
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
+-- Disable concealing in markdown files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "markdown.mdx" },
+  callback = function()
+    vim.opt_local.conceallevel = 0
+  end,
+})
+
 -- what follows are not autocmds, but we need them loading after the verylazy event
 
 -- Define custom highlight groups for tabs with a bright blue background
