@@ -17,12 +17,3 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- what follows are not autocmds, but we need them loading after the verylazy event
-
--- Define custom highlight groups for tabs with a bright blue background
-vim.api.nvim_set_hl(0, "TabLineSel", { fg = "#ffffff", bg = "#5f87af", bold = false }) -- Selected tab
-vim.api.nvim_set_hl(
-  0,
-  "TabLine",
-  -- { fg = "#ffffff", bg = "#14161b", bold = false }
-  { fg = "#ffffff", bg = "NONE", bold = false }
-) -- Non-selected tabs
