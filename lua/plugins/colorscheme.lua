@@ -1,13 +1,35 @@
 return {
-  {
-    "RRethy/base16-nvim",
-    lazy = false,
-    priority = 1000,
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "base16-gruvbox-light-hard",
-    },
-  },
+  -- {
+  --   "projekt0n/github-nvim-theme",
+  --   name = "github-theme",
+  --   lazy = false, -- make sure we load this during startup if it is your main colorscheme
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     require("github-theme").setup({
+  --       -- ...
+  --     })
+  --
+  --     -- vim.cmd('colorscheme github_dark')
+  --   end,
+  --   opts = {
+  --     -- choose the variant
+  --     variant = "light_high_contrast",
+  --   },
+  -- },
+  -- { "LazyVim/LazyVim", opts = {
+  --   colorscheme = "github_light_high_contrast",
+  -- } },
+
+  -- Configure TokyoNight with a black background for better contrast
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   opts = {
+  --     style = "night", -- darkest variant
+  --     on_colors = function(colors)
+  --       colors.bg = "#000000" -- pure black background
+  --       colors.bg_dark = "#000000" -- sidebar/float backgrounds
+  --       colors.bg_float = "#000000" -- floating window backgrounds
+  --     end,
+  --   },
+  -- },
 }
