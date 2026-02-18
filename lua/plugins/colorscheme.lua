@@ -20,16 +20,12 @@ return {
   --   colorscheme = "github_light_high_contrast",
   -- } },
 
-  -- Configure TokyoNight with a black background for better contrast
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   opts = {
-  --     style = "night", -- darkest variant
-  --     on_colors = function(colors)
-  --       colors.bg = "#000000" -- pure black background
-  --       colors.bg_dark = "#000000" -- sidebar/float backgrounds
-  --       colors.bg_float = "#000000" -- floating window backgrounds
-  --     end,
-  --   },
-  -- },
+  {
+    "folke/tokyonight.nvim",
+    opts = {
+      on_colors = function(colors)
+        colors.fg = "#e0e5fa"
+      end,
+    },
+  },
 }
